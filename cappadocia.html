@@ -31,7 +31,11 @@
         </div>
         <p class="p1">Эксклюзивный тур</p>
       </div>
+      <div class="clock">
+        <div id="time">00:00:00</div>
+      </div>
     </section>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
     <section id="section2">
       <div class="block2">
         <h1>Fairy tail</h1>
@@ -99,7 +103,30 @@
           <p>Полёт на воздушном шаре Завтрак в отеле Экскурсии на выбор</p>
           <h2>День 4</h2>
           <p>Свободное время, шоппинг Трансфер в Анкару Вылет в Киев</p>
-          <button class="btn1">ЗАБРОНИРОВАТЬ</button>
+          <button id="openDialog">Забронировать</button>
+
+          <dialog id="loremDialog">
+            <form id="form">
+              <div class="text5">
+                <h1>Оставить заявку или задать вопрос</h1>
+                <input
+                  type="text"
+                  placeholder="Имя"
+                  id="form"
+                  class="form"
+                  name="name"
+                />
+                <input
+                  type="tel"
+                  placeholder="Телефон"
+                  id="number"
+                  class="form"
+                  name="number"
+                />
+                <button type="submit" class="btn2">ОСТАВИТЬ ЗАЯВКУ</button>
+              </div>
+            </form>
+            <button id="closeDialog">Close</button>
         </div>
       </div>
       <div class="slider-container">
@@ -178,7 +205,7 @@
               </p>
               <p>
                 Фотосессия с профессиональным фотографом для каждой участницы
-                (Несколько локаций, 5 лучших фото в обработке фотографа и весь
+                Несколько локаций, 5 лучших фото в обработке фотографа и весь
                 материал (до 100 фотографий)
               </p>
             </div>
@@ -272,10 +299,12 @@
                 </div>
               </form>
             </div>
+
+
         </div>
       </div>
     </section>
 
-    <script src="main.js"></script>
+    <script src="cappadocia.js"></script>
   </body>
 </html>
